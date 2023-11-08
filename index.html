@@ -452,33 +452,67 @@
     </footer>
     <div class="signup-container">
         <div class="signup-box">
-            <form class="hero-form">
-                <svg width="24" height="24">
-                    <use href="./images/sprite/icons.svg#icon-Ellipse"></use>
+            <button class="icon-btn" type="button">
+                <svg class="closing-icon" width="8" height="8">
+                    <use href="./images/sprite/icons.svg#icon-close"></use>
                 </svg>
-                <p class="hero-form-title">Leave your contacts and we will call you back</p>
-                <label class="hero-form-label">
-                    Name
-                    <input class="hero-form-input" type="text">
-                </label>
-                <label class="hero-form-label">
-                    Phone
-                    <input class="hero-form-input" type="tel">
-                </label>
-                <label class="hero-form-label">
-                    Email
-                    <input class="hero-form-input" type="email">
-                </label>
-                <label class="hero-form-label" for="coment">
-                    Comment
-                    <textarea name="feedback" id="coment" placeholder="Text input"></textarea>
-                </label>
-                <p class="agriment"><svg width="16px" height="16px">
-                    <use href="./images/sprite/icons.svg#icon-Checkbox"></use>
-                </svg>
-                    I accept the terms and conditions of the <span class="form-span">Privacy Policy</span>
-                </p>
-                <button class="hero-form-btn" type="button">Send</button>
+            </button>
+            <p class="signup-form-title">
+                Leave your contacts and we will call you back
+            </p>
+            <form>
+                <div class="signup-form-box">
+                    <label class="signup-form-label" for="user-name">
+                        Name
+                    </label>
+                    <div class="input-box">
+                        <input class="signup-form-input" name="user-name" type="text" id="user-name">
+                        <svg class="input-icon" widht="18" height="24">
+                            <use href="./images/sprite/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                    <div class="signup-form-box">
+                        <label class="signup-form-label" for="user_phone">
+                            Phone
+                        </label>
+                    </div>
+                    <div class="input-box">
+                        <input class="signup-form-input" name="user-phone" type="tel" id="user_phone">
+                        <svg class="input-icon" widht="18" height="24">
+                            <use href="./images/sprite/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                    <div class="signup-form-box">
+                        <label class="signup-form-label" for="user_email">
+                            Email
+                        </label>
+                    </div>
+                    <div class="input-box">
+                        <input class="signup-form-input" name="user-email" type="email" id="user_email">
+                        <svg class="input-icon" widht="18" height="24">
+                            <use href="./images/sprite/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                    <div class="comment-box">
+                        <label for="user-comment" class="signup-form-label">
+                            Comment
+                        </label>
+                        <textarea class="comment" name="user-comment" id="user-comment"placeholder="Text input"></textarea>
+                    </div>
+                    <div class="checkbox-box">
+                        <input class="checkbox-input visually-hidden" type="checkbox" id="user-privacy" value="true" name="user-privacy">
+                        <label class="checkbox-label" for="user-privacy">
+                            I accept the terms and conditions of the 
+                            <span class="form-span">
+                                <svg class="checkbox-icon" widht="10" height="8">
+                                    <use href="./images/sprite/icons.svg#icon-Checkbox"></use>
+                                </svg>
+                            </span>
+                            <a class="checkbox-link" href="#">Privacy Policy</a>
+                        </label>
+                    </div>   
+                    <button class="sighnup-form-btn" type="submit">Send</button>
+                </div>
             </form> 
         </div>
     </div>
