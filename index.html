@@ -51,34 +51,6 @@
           <h1 class="title">Effective Solutions for Your Business</h1>
           <button type="button" class="knob">Order Service</button>
         </div>
-        <form class="hero-form">
-            <svg width="24" height="24">
-                <use href="./images/sprite/icons.svg#icon-Ellipse"></use>
-            </svg>
-            <p class="hero-form-title">Leave your contacts and we will call you back</p>
-            <label class="hero-form-label">
-                Name
-                <input class="hero-form-input" type="text">
-            </label>
-            <label class="hero-form-label">
-                Phone
-                <input class="hero-form-input" type="tel">
-            </label>
-            <label class="hero-form-label">
-                Email
-                <input class="hero-form-input" type="email">
-            </label>
-            <label class="hero-form-label" for="coment">
-                Comment
-                <textarea name="feedback" id="coment" placeholder="Text input"></textarea>
-            </label>
-            <p class="agriment"><svg width="16px" height="16px">
-                <use href="./images/sprite/icons.svg#icon-Checkbox"></use>
-            </svg>
-                I accept the terms and conditions of the <span class="form-span">Privacy Policy</span>
-            </p>
-            <button class="hero-form-btn" type="submit">Send</button>
-        </form>
       </section>
       <!--Section-2 Studio Descriptions-->
       <section class="section-info">
@@ -460,15 +432,17 @@
               </li>
             </ul>
         </div>
-        <div>
+        <div class="form-box">
+            <p class="bottom-form-text">
+                Subscribe
+            </p>
             <form class="bottom-form">
-                    <p class="bottom-form-text">
-                        Subscribe
-                    </p>
-                        <input class="bottom-input" type="email" placeholder="E-mail">
+                <label class="bottom-form-label">
+                    <input class="bottom-input" name="mail" type="email" placeholder="E-mail">
+                </label>
                 <button type="submit" class="bottom-btn">
-                    <span class="bottom-form-span">Subscribe</span>
-                    <svg class="social-icon" width="24" height="24">
+                    Subscribe
+                    <svg class="social-icon bottom-form-icon" width="24" height="24">
                         <use href="./images/sprite/icons.svg#icon-Telegram"></use>
                     </svg>
                 </button>
@@ -476,5 +450,37 @@
         </div>
       </div>
     </footer>
+    <div class="signup-container">
+        <div class="signup-box">
+            <form class="hero-form">
+                <svg width="24" height="24">
+                    <use href="./images/sprite/icons.svg#icon-Ellipse"></use>
+                </svg>
+                <p class="hero-form-title">Leave your contacts and we will call you back</p>
+                <label class="hero-form-label">
+                    Name
+                    <input class="hero-form-input" type="text">
+                </label>
+                <label class="hero-form-label">
+                    Phone
+                    <input class="hero-form-input" type="tel">
+                </label>
+                <label class="hero-form-label">
+                    Email
+                    <input class="hero-form-input" type="email">
+                </label>
+                <label class="hero-form-label" for="coment">
+                    Comment
+                    <textarea name="feedback" id="coment" placeholder="Text input"></textarea>
+                </label>
+                <p class="agriment"><svg width="16px" height="16px">
+                    <use href="./images/sprite/icons.svg#icon-Checkbox"></use>
+                </svg>
+                    I accept the terms and conditions of the <span class="form-span">Privacy Policy</span>
+                </p>
+                <button class="hero-form-btn" type="button">Send</button>
+            </form> 
+        </div>
+    </div>
   </body>
 </html>
